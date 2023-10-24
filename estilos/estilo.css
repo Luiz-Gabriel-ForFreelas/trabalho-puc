@@ -1,0 +1,59 @@
+/* GERAL */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* CLASSES */
+
+#home .home h1{
+    text-decoration: underline;
+    background: rgb(168, 168, 168);
+    color: white;
+}
+
+.centralizador {
+    width: 100%;
+    text-align: center;
+    height: 65px;
+}
+
+
+/* NAVEGAÇÃO*/
+
+header {
+    width: 100%;
+    background: rgb(228, 227, 227);
+}
+
+#navegacao {
+    list-style: none;
+}
+
+#navegacao a {
+    text-decoration: none;
+}
+
+#navegacao h1 {
+    line-height: 65px;
+    padding: 14px 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    transition: color 1s;
+    transition: background 1s;   
+}
+
+#navegacao h1:hover{
+    text-decoration: underline;
+    background: rgb(168, 168, 168);
+    color: white;
+}
+
+#navegacao h1, #navegacao li {  
+    display: inline;
+}
