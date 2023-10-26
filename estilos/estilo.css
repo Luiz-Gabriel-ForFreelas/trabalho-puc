@@ -57,3 +57,16 @@ header {
 #navegacao h1, #navegacao li {  
     display: inline;
 }
+
+/* LISTA PRINCIPAL */
+
+#produto .menu {
+    position: relative;
+    width: 30%;
+    display: inline-block;
+}
+
+#produto .imagem {
+    position: relative;
+    width: 100%;
+}
