@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="valor">Oi</h1>
+    <script>
+        var url = window.location.href;  
+        window.alert(url)
+        let cont_ecom = 0
+
+        for (let cont=0; cont != url.length; cont++) {
+            if (url[cont === "&"]) {
+                cont_ecom++
+            }
+            if (url[cont] === "=" && cont_ecom == 0) {
+                window.alert("1")
+            }
+        }
+    </script>
+</body>
+</html>
