@@ -29,47 +29,57 @@
         <article id="produto">
             <div class="menu">
                 <div class="divisao">
-                    <img class="imagem" src="https://img.cybercook.com.br/imagens/receitas/685/bolinho-de-chocolate-mal-passado.jpg" alt="">
+                    <img class="imagem" src="imagens/chocolate.jpg" alt="">
+                    <h1>CHOCOLATE CHOCOLATE</h1>
+                </div>
+                <input type="button" value="Saiba mais..." onclick="openModal('CupFlavor1');">
+            </div>
+            <div class="menu">
+                <div class="divisao">
+                    <img class="imagem" src="imagens/raspberry.jpg" alt="">
+                    <h1>RASPBERRY CHOCOLATE</h1>
+                </div>
+                <input type="button" value="Saiba mais..." onclick="openModal('CupFlavor2');">
+            </div>
+            <div class="menu">
+                <div class="divisao">
+                    <img class="imagem" src="imagens/menta.jpg" alt="">
+                    <h1>MINT DOUBLE CHOCOLATE</h1>
+                </div>
+                <input type="button" value="Saiba mais..." onclick="openModal('CupFlavor3');">
+            </div>
+            <div class="menu">
+                <div class="divisao">
+                    <img class="imagem" src="imagens/rainbow_vanilla.jpg" alt="">
+                    <h1>RAINBOW VANILLA</h1>
+                </div>
+                <input type="button" value="Saiba mais..." onclick="openModal('CupFlavor4');">
+            </div>
+            <div class="menu">
+                <div class="divisao">
+                    <img class="imagem" src="imagens/red_velvet.jpg" alt="">
+                    <h1>RED VELVET</h1>
+                </div>
+                <input type="button" value="Saiba mais..." onclick="openModal('CupFlavor5');">
+            </div>
+            <div class="menu">
+                <div class="divisao">
+                    <img class="imagem" src="imagens/chocolate_e_creme.jpeg" alt="">
                     <h1>COOKIES AND CREAM</h1>
                 </div>
-                <input type="button" value="Saiba mais...">
+                <input type="button" value="Saiba mais..." onclick="openModal('CupFlavor6');">
             </div>
-            <div class="menu">
-                <div class="divisao">
-                    <img class="imagem" src="https://img.cybercook.com.br/imagens/receitas/685/bolinho-de-chocolate-mal-passado.jpg" alt="">
-                    <h1>COOKIES AND CREAM</h1>
+            <div id="pop-up">
+                <div onclick="botaoVisibel()">
+                    <h1>X</h1>
                 </div>
-                <input type="button" value="Saiba mais...">
-            </div>
-            <div class="menu">
-                <div class="divisao">
-                    <img class="imagem" src="https://img.cybercook.com.br/imagens/receitas/685/bolinho-de-chocolate-mal-passado.jpg" alt="">
-                    <h1>COOKIES</h1>
-                </div>
-                <input type="button" value="Saiba mais...">
-            </div>
-            <div class="menu">
-                <div class="divisao">
-                    <img class="imagem" src="https://img.cybercook.com.br/imagens/receitas/685/bolinho-de-chocolate-mal-passado.jpg" alt="">
-                    <h1>COOKIES AND CREAM</h1>
-                </div>
-                <input type="button" value="Saiba mais...">
-            </div>
-            <div class="menu">
-                <div class="divisao">
-                    <img class="imagem" src="https://img.cybercook.com.br/imagens/receitas/685/bolinho-de-chocolate-mal-passado.jpg" alt="">
-                    <h1>COOKIES AND CREAM</h1>
-                </div>
-                <input type="button" value="Saiba mais...">
-            </div>
-            <div class="menu">
-                <div class="divisao">
-                    <img class="imagem" src="https://img.cybercook.com.br/imagens/receitas/685/bolinho-de-chocolate-mal-passado.jpg" alt="">
-                    <h1>COOKIES</h1>
-                </div>
-                <input type="button" value="Saiba mais...">
+                <h1 id="nome">NOME</h1>
+                <p id="descricao">descricao</p>
+                <h2><span>Valor: R$</span> <span id="preco">00,00</span></h2>
             </div>
         </article>
     </section>
+    <script src="scripts/index.js">
+    </script>
 </body>
 </html>

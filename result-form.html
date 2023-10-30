@@ -3,118 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="estilos/formresultado.css">
     <title>Document</title>
 </head>
-<body>
-    <h1 id="valor">Oi</h1>
-    <script>
-        var url = window.location.href;  
-        var iguais = []
-        var es = []
-        window.alert(url)
-
-        for (let cont = 0 ; cont != url.length ; cont++) {
-            if (url[cont] == "=") {
-                iguais.push(cont)
-            } if (url[cont] == "&") {
-                es.push(cont)
-            }
-        }
-
-        // FORMATAR NOME
-
-        var nome_var = url.substring(iguais[0], es[0])
-        nome_var = nome_var.replace("=", "")
-        var nome_fim = ""
-
-        for (let cont = 0; cont != nome_var.length ; cont++) {
-
-            if (nome_var[cont] == "+"){
-                nome_fim += " "
-            } else {
-                nome_fim += nome_var[cont]
-            }
-        }
-
-        // FORMATAR EMAIL
-
-        var email_var = url.substring(iguais[1], es[1])
-        email_var = email_var.replace("=", "")
-        var email_fim = ""
-
-        for (let cont = 0; cont != email_var.length ; cont++) {
-
-            if (email_var[cont] == "+"){
-                email_fim += " "
-            } else {
-                email_fim += email_var[cont]
-            }
-        }
-
-        var email_per = email_fim.indexOf("%")
-        var email_fim_replace = ""
-        email_fim_replace += email_fim.substring(0, email_per)
-        email_fim_replace += "@"
-        email_fim_replace += email_fim.substring((email_per + 3), email_fim.length)
-
-        // FORMATAR NUMERO
-
-        var num_var = url.substring(iguais[2], es[2])
-        num_var = num_var.replace("=", "")
-        var num_fim = ""
-
-        for (let cont = 0; cont != num_var.length ; cont++) {
-
-            if (num_var[cont] == "+"){
-                num_fim += " "
-            } else {
-                num_fim += num_var[cont]
-            }
-        }
-
-        var num_fim_replace = ""
-        num_fim_replace += "("
-        num_fim_replace += num_fim.substring(3, 5)
-        num_fim_replace += ") "
-        num_fim_replace += num_fim.substring(9, num_fim.length)
-
-        // FORMATAR DATA
-
-        var data_var = url.substring(iguais[3], es[3])
-        data_var = data_var.replace("=", "")
-        var data_fim = ""
-
-        for (let cont = 0; cont != data_var.length ; cont++) {
-
-            if (data_var[cont] == "+"){
-                data_fim += " "
-            } else {
-                data_fim += data_var[cont]
-            }
-        }
-
-        // FORMATAR CHECKBOX
-
-        var box_var = url.substring(iguais[4], es[4])
-        box_var = box_var.replace("=", "")
-        var box_fim = ""
-
-        for (let cont = 0; cont != box_var.length ; cont++) {
-
-            if (box_var[cont] == "+"){
-                box_fim += " "
-            } else {
-                box_fim += box_var[cont]
-            }
-        }
-
-        window.alert(nome_fim)
-        window.alert(email_fim_replace)
-        window.alert(num_fim_replace)
-        window.alert(data_fim)
-        window.alert(box_fim)
-
-
+<body id="contato">
+    <header>
+        <div class="centralizador">
+            <ul id="navegacao">
+                <li class="home">
+                    <a href="index.html"><h1>Home</h1></a>
+                </li>
+                <li class="novidades">
+                    <a href=""><h1>News</h1></a>
+                </li>
+                <li class="contato">
+                    <a href="contact_action.html"><h1>Contact</h1></a>
+                </li>
+                <li class="sobre">
+                    <a href=""><h1>About</h1></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <article id="form-resultado">
+            <div>
+                <h1>dados de contato</h1>
+                <table>
+                    <tr>
+                        <td class="cinza esquerda">Chave</td>
+                        <td class="cinza direita">Valor</td>
+                    </tr>
+                    <tr>
+                        <td class="cinza esquerda">Nome</td>
+                        <td id="nome" class="branco direita">Valor</td>
+                    </tr>
+                    <tr>
+                        <td class="cinza esquerda">Email</td>
+                        <td id="email" class="branco direita">Valor</td>
+                    </tr>
+                    <tr>
+                        <td class="cinza esquerda">Telefone</td>
+                        <td id="telefone" class="branco direita">Valor</td>
+                    </tr>
+                    <tr>
+                        <td class="cinza esquerda">Nascimento</td>
+                        <td id="nascimento" class="branco direita">Valor</td>
+                    </tr>
+                    <tr>
+                        <td class="cinza esquerda">Agree-term</td>
+                        <td id="agree-term" class="branco direita">Valor</td>
+                    </tr>
+                </table>
+                <a href="contact_action.html"><h2>Voltar <<</h2></a>
+            </div>
+        </article>
+    </section>
+    <script src="scripts/form.js">
     </script>
 </body>
 </html>

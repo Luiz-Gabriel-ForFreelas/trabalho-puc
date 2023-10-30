@@ -1,0 +1,69 @@
+#form-resultado div {
+    width: 90%;
+    margin: 0 auto;
+}
+#form-resultado h1 {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background: rgb(30, 102, 211);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#form-resultado h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background: rgb(16, 48, 97);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+#form-resultado h2:hover{
+    background: rgb(30, 102, 211);
+    text-decoration: underline;
+}
+
+#form-resultado a {
+    text-decoration: none;
+    color: white;
+}
+
+#form-resultado table {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cinza, .branco {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+}
+
+.cinza {
+    background: rgb(228, 227, 227);
+    color: rgb(74, 77, 83);
+    border-radius: 10px;
+    padding: 15px 0px;
+    text-align: center;
+}
+
+.branco {
+    border-radius: 10px;
+    padding: 15px 0px;
+    text-align: center;
+    border: 2px solid rgb(228, 227, 227);
+}
+
+.esquerda {
+    width: 30%;
+}
+
+.direita {
+    width: 70%;
+}

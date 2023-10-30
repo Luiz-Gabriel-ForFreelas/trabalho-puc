@@ -74,7 +74,9 @@ section {
 
 #produto .imagem {
     position: relative;
-    width: 100%;
+    width: 250px;
+    height: 200px;
+    margin: 0 auto;
 }
 
 .menu {
@@ -109,4 +111,52 @@ section {
 
 .menu input:hover {
     background: rgb(14, 63, 136);
+}
+
+/* POP-UP */
+
+#pop-up{
+    background: rgb(248, 235, 212);
+    margin: auto;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100px 150px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px black;
+    visibility: hidden;
+}
+
+#pop-up div {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    padding: 8px;
+    color: white;
+    background: red;
+    border-radius: 5px;
+}
+
+#pop-up div:hover {
+    background: rgb(167, 3, 3);
+    cursor: pointer;
+}
+
+#pop-up h1#nome {
+    font-size: 1.5em;
+    color: red;
+}
+
+#pop-up p {
+    font-size: 1.5em;
+    margin: 30px 0;
+    color: red;
+}
+
+#pup-up h2 {
+    font-size: 1.5em;
+}
+
+#pop-up span {
+    color: red;
 }
