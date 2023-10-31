@@ -9,10 +9,30 @@ body {
     margin: 0 auto;
 }
 
+#titulo-principal {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background: rgb(30, 102, 211);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#subtitulo {
+        font-size: 2em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+    margin: 50px 0;
+}
+
 /* CLASSES */
 
 #home .home h1,
-#contato .contato h1{
+#contato .contato h1,
+#sobre .sobre h1{
     text-decoration: underline;
     background: rgb(168, 168, 168);
     color: white;
